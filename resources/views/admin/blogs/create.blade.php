@@ -8,7 +8,7 @@
             <x-form.input name="slug"/>
             <x-form.input name="intro"/>
             <x-form.textarea name="body"/>
-            <x-form.input name="thumbnail" type="file"/>
+            <x-form.input name="thumbnail" type="file" accept="image/*"/>
             
             <x-form.input-wrapper>
                 <x-form.lable name="category"/>
