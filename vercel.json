@@ -2,14 +2,17 @@
     "version": 2,
     "builds": [
       {
-        "src": "Dockerfile",
-        "use": "@vercel/docker"
+        "src": "api/index.php",
+        "use": "@vercel/static-build",
+        "config": {
+          "zeroConfig": true
+        }
       }
     ],
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "/public/index.php"
+        "dest": "/api/index.php"
       }
     ],
     "env": {
